@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.7em;
+    font-family: calibri;
+}
+
+.navbar {
+    background-color: grey;
+    border-radius: 0;
+    border: 0;
+}
+
+h1{
+    font-weight: 600;
+}
+
+#menu:hover{
+    color: #6495ED;
+}
+
+
+.navbar-header .navbar-brand {
+    height: 110px;
+    color: black;
+}
+
+.navbar-header button span{
+    color: black;
+}
+
+#collapsable-nav ul a{
+    color : black;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 25px;
+}
+
+#menu{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.container section{
+    border: 1px solid black;
+    background: grey;
+    color: black;
+}
+
+.container section p{
+    padding : 0px 10px;
+}
+
+.container section div{ /* chicken, beef, sushi */
+    border: 1px solid black;
+    text-align: center;
+    width: 30%;
+    margin-left: 70%;
+    font-weight: bold;
+    font-size: 125%;
+    background: #6495ED;
+}
+
+
+#collapsable-nav ul a:hover{
+    background: #E7E7E7;
+}
+
+/* large */
+@media (min-width: 992px) {
+
+    #collapsable-nav ul li a{
+    visibility: hidden;
+     /* display: none; */
+    }
+
+    #chicken-section{
+    margin-left: 20px;
+    }
+
+    #sushi-section{
+        margin-right: 20px;
+    }
+
+    .container section{
+        margin: 20px 0px 10px 0px;
+    }
+
+    .col-lg-4 {
+    width: 33.33%;
+  }
+}
+
+
+/* mid */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    #collapsable-nav ul li a{
+        visibility: hidden;
+         /* display: none; */
+    }
+
+    .container section{
+        margin: 30px 20px 10px 20px;
+    }
+
+    #chicken-section{
+        margin-right: 0px;
+    }
+
+    #beef-section{
+        margin-left: 0px;
+    }
+
+    .col-md-6 {
+    width: 50%;
+    }
+
+    .col-md-12 {
+    width: 100%;
+    }
+}
+
+/* small */
+@media (max-width: 767px) {
+    .container section{
+        margin: 30px 15px 10px 15px;
+    }
+    #collapsable-nav{
+        background: #6495ED;
+}
+}
+
+/*
+@media (min-width: 992px) {}
+@media (min-width: 768px) and (max-width: 991px) {}
+@media (max-width: 767px) {
+*/
