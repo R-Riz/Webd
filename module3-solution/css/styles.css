@@ -68,6 +68,13 @@ h1{
 #collapsable-nav ul a:hover{
     background: #E7E7E7;
 }
+.container p>a{
+    /* background: #E7E7E7; */
+    color: blue;
+    font-style: oblique ;
+}
+
+
 
 /* large */
 @media (min-width: 992px) {
