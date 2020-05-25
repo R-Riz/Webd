@@ -1,1 +1,0 @@
-# Namasteworld.github.io
